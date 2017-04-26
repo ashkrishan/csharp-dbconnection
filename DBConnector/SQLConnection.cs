@@ -1,0 +1,48 @@
+﻿using System;
+using System.Threading.Tasks;
+using System.Threading;
+
+namespace DBConnector
+{
+    class SQLConnection : DBConnection
+    {
+
+        public SQLConnection(string connectionString)
+            :base(connectionString) {
+
+        }
+
+        private void OpenConnection()
+        {
+            var task = Task.Run(() => SetupConnection());
+
+            if (!task.Wait(Timeout))
+            {
+                throw new TimeoutException("Connection timed out! Unable to open!");
+            }
+            else
+            {
+                Console.WriteLine("connection success\n Conection Opened!");
+            }
+        }
+
+
+        private void SetupConnection()
+        {
+            Thread.Sleep(10000);  //Create timeout delay to demonstrate task didn't complete of opening connection 
+   
+        }
+
+        public override void Open()
+        {
+
+            OpenConnection();
+
+        }
+        
+        public override void Close()
+        {
+            Console.WriteLine("SQL server connection closed!\n");
+        }
+    }
+}
