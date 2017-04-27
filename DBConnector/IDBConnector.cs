@@ -1,6 +1,6 @@
 ﻿namespace DBConnector
 {
-    public interface IDBConnector
+    public interface IDBConnection
     {
         void Open();
         void Close();

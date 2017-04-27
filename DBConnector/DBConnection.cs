@@ -4,9 +4,10 @@ namespace DBConnector
 {
     public abstract class DBConnection
     {
+        
+        
         public string ConnectionString { get; private set; }
         public TimeSpan Timeout { get; set; }
-
 
         public DBConnection(string connectionString)
         {

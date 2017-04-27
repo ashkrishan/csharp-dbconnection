@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace DBConnector
 {
-    class SQLConnection : DBConnection, IDBConnector
+    public class SQLConnection : DBConnection, IDBConnection
     {
 
         public SQLConnection(string connectionString)

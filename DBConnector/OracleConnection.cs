@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace DBConnector
 {
-    class OracleConnection : DBConnection, IDBConnector
+   public class OracleConnection : DBConnection, IDBConnection
     {
         public OracleConnection(string connectionString)
              :base(connectionString)
