@@ -48,7 +48,7 @@
     <Compile Include="DbCommand.cs" />
     <Compile Include="DBConnection.cs" />
     <Compile Include="IDbCommand.cs" />
-    <Compile Include="IDBConnector.cs" />
+    <Compile Include="IDBConnection.cs" />
     <Compile Include="OracleConnection.cs" />
     <Compile Include="SQLCommand.cs" />
     <Compile Include="SQLConnection.cs" />
