@@ -1,4 +1,6 @@
-﻿namespace DbConnector
+﻿//This class is not implemented at the moment but shown as an example for future DI to showcase loose coupling
+
+namespace DbConnector
 {
     class DbCommand
     {
