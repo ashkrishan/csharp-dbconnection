@@ -9,7 +9,7 @@ namespace DBConnector
         {
             var sqlConn = new SQLConnection(@"SQL26362236.....")
             {
-                Timeout = new TimeSpan(0, 0, 11) //11 secs timeout
+                Timeout = new TimeSpan(0, 0, 5) //secs timeout
             };
 
             var command1 = new SQLCommand(sqlConn);
@@ -17,7 +17,7 @@ namespace DBConnector
 
             var oracleConn = new OracleConnection(@"ORACLe3838383....")
             {
-                Timeout = new TimeSpan(0, 0, 2)  //2 sec timeout
+                Timeout = new TimeSpan(0, 0, 2)  //secs timeout
             };
 
             var command2 = new SQLCommand(oracleConn);

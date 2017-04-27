@@ -29,7 +29,7 @@ namespace DBConnector
 
         private void SetupConnection()
         {
-            Thread.Sleep(10000);  //Create timeout delay to demonstrate task didn't complete of opening connection 
+            Thread.Sleep(1000);  //Create timeout delay to demonstrate task didn't complete of opening connection 
    
         }
 
