@@ -45,12 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DbCommand.cs" />
+    <Compile Include="ExtensibilityOnly.cs" />
     <Compile Include="DBConnection.cs" />
     <Compile Include="IDbCommand.cs" />
     <Compile Include="IDBConnection.cs" />
     <Compile Include="OracleConnection.cs" />
-    <Compile Include="SQLCommand.cs" />
+    <Compile Include="DbCommand.cs" />
     <Compile Include="SQLConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

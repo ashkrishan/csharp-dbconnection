@@ -1,13 +1,23 @@
-﻿//This class is not implemented at the moment but shown as an example for future DI to showcase loose coupling
+﻿using System;
+using DBConnector;
 
 namespace DbConnector
 {
-    class DbCommand
+
+    public class DbCommand : IDbCommand
     {
-        private readonly IDbCommand _command;
-        public DbCommand(IDbCommand dbCommand) //dependency injection and OCP (Open close programming)
+        private readonly IDBConnection _connection;
+        public DbCommand(IDBConnection connection)   //dependency injection and OCP (Open close programming)
         {
-            _command = dbCommand;
+            _connection = connection;
         }
+
+        public void Execute(string command)
+        {
+            _connection.Open();
+            Console.WriteLine("Command execution {0}", command);
+            _connection.Close();
+        }
+
     }
 }
