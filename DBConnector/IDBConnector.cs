@@ -1,8 +1,9 @@
 ﻿namespace DBConnector
 {
-    interface ISQLConnection
+    public interface IDBConnector
     {
-        void Close();
         void Open();
+        void Close();
     }
+
 }

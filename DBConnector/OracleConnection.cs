@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace DBConnector
 {
-    class OracleConnection : DBConnection
+    class OracleConnection : DBConnection, IDBConnector
     {
         public OracleConnection(string connectionString)
              :base(connectionString)
@@ -34,14 +34,14 @@ namespace DBConnector
         }
 
 
-        public override void Open()
+        public void Open()
         {
 
             OpenConnection();
 
         }
 
-        public override void Close()
+        public void Close()
         {
             Console.WriteLine("SQL server connection closed!\n");
         }

@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace DBConnector
 {
-    class SQLConnection : DBConnection
+    class SQLConnection : DBConnection, IDBConnector
     {
 
         public SQLConnection(string connectionString)
@@ -33,14 +33,14 @@ namespace DBConnector
    
         }
 
-        public override void Open()
+        public void Open()
         {
 
             OpenConnection();
 
         }
         
-        public override void Close()
+        public void Close()
         {
             Console.WriteLine("SQL server connection closed!\n");
         }

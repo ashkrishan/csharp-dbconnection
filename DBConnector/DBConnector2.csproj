@@ -43,7 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBConnection.cs" />
-    <Compile Include="ISQLConnection.cs" />
+    <Compile Include="IDBConnector.cs" />
     <Compile Include="OracleConnection.cs" />
     <Compile Include="SQLConnection.cs" />
     <Compile Include="Start.cs" />

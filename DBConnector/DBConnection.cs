@@ -18,9 +18,8 @@ namespace DBConnector
 
         }
 
-        public abstract void Open();
-        public abstract void Close();
-        
+               
         
     }
+
 }
